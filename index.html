@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrilink Software</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌱 Agrilink Software</h1>
+    <p>Connecting farmers with markets, insights, and growth.</p>
+  </header>
+
+  <main>
+    <!-- Part 1: Input & Conditionals -->
+    <section class="card">
+      <h2>📊 Crop Yield Estimator</h2>
+      <label for="yield">Enter yield (kg):</label>
+      <input type="number" id="yield" placeholder="e.g., 1200">
+      <button onclick="checkYield()">Check Yield</button>
+      <p id="yieldResult"></p>
+    </section>
+
+    <!-- Part 2: Functions -->
+    <section class="card">
+      <h2>💰 Profit Calculator</h2>
+      <label for="price">Price per kg (KES):</label>
+      <input type="number" id="price" placeholder="e.g., 50">
+      <label for="quantity">Quantity (kg):</label>
+      <input type="number" id="quantity" placeholder="e.g., 200">
+      <button onclick="calculateProfit()">Calculate Profit</button>
+      <p id="profitResult"></p>
+    </section>
+
+    <!-- Part 3: Loops -->
+    <section class="card">
+      <h2>🌾 Farm Tasks</h2>
+      <button onclick="listTasks()">Show Tasks</button>
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- Part 4: DOM -->
+    <section class="card">
+      <h2>✨ Interactivity</h2>
+      <button onclick="toggleMessage()">Toggle Message</button>
+      <p id="toggleText" class="hidden">Agrilink empowers farmers every day 🚜</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Agrilink | Powered by JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
